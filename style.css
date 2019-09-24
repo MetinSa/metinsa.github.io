@@ -100,8 +100,8 @@
     text-decoration: none;
 }
 
-.footer .icons a {
-    text-decoration: none;
+.footer .icons a:visited{
+    color: inherit;
 }
 
 .footer .info{
@@ -138,10 +138,10 @@
 }
 
 .dropdown button:hover{
-    background-color:rgb(42, 118, 224);
+    background-color:rgb(32, 84, 156)
 }
 
-.dropdown li:hover{
+#dropdown-content a:hover li:hover{
     color:rgb(42, 118, 224);
 }
 
@@ -252,6 +252,7 @@
     font-weight: 600;
     font-size: 15px;
     outline: none;
+    
 }
 
 .buttons :last-child {
@@ -265,6 +266,14 @@
     border: none;
 }
 
+.main-container .button-1:hover {
+    background-color:rgb(32, 84, 156)
+}
+.main-container .button-2:hover {
+    background-color:rgb(32, 84, 156);
+    border-color: rgb(32, 84, 156);
+    color: white;
+}
 .main-container .button-2 {
     color: rgb(42, 118, 224);
     background-color: white;
@@ -356,5 +365,14 @@
     border-color: rgb(42, 118, 224);
     width: 200px;
     border: solid 3px;
+}
 
+.secondary-container .button-1:hover {
+    background-color:rgb(32, 84, 156);
+
+}
+.secondary-container .button-2:hover {
+    background-color:rgb(32, 84, 156);
+    border-color: rgb(32, 84, 156);
+    color: white;
 }
