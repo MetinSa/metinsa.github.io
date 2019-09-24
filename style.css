@@ -6,12 +6,12 @@
     box-sizing: border-box;
 }
 
+
 .header{
     width: 100%;
     height: 90px;
     background: white;
-    box-shadow: 0px 8px 16px 0px rgba(143, 143, 143, 0.055);
-
+    border-bottom: 1px solid rgba(216, 216, 216, 0.438);
     z-index: 9999
 }
 .inner_header{
@@ -76,6 +76,45 @@
 .sticky + .content {
   padding-top: 102px;
 }
+
+.footer{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 1rem;            /* Footer height */
+    border-top: 2px solid rgba(119, 118, 131, 0.137);
+    justify-content: space-evenly;
+    text-align: center;
+    color: rgb(119, 118, 131);
+    font-family: 'Asap', sans-serif;
+    font-size: 16px;
+}
+
+.footer .copyright{
+    padding-top: 50px;
+}
+.footer .icons{
+    padding-top: 50px;
+    font-size: 30;
+    text-decoration: none;
+}
+
+.footer .icons a {
+    text-decoration: none;
+}
+
+.footer .info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    text-align: left;
+    font-size: 16;
+}
+.footer .info li {
+    margin: 0 0 10px 0
+}
+
 
 .dropdown {
     display: flex;
@@ -145,7 +184,6 @@
 
 .main-container {
     display: flex;
-    flex: 1;
     position: relative;
     flex-direction: row;
     justify-content: center;
@@ -153,6 +191,7 @@
     height: auto;
     margin: 150px auto;
     background: none;
+    flex-wrap: wrap;
 }
 
 .main-article {
@@ -160,8 +199,6 @@
     position: absolute;
     align-items: center;
     max-width: 1400px;
-
-
 }
 .main-article .buttons {
     text-align: center;
@@ -217,15 +254,15 @@
     outline: none;
 }
 
-.divider {
-    padding:0 0 0 170px;
+.buttons :last-child {
+    margin-left: 40px;
 }
+
 .main-container .button-1 {
     background: rgb(42, 118, 224);
     color: white;
     width: 150px;
     border: none;
-
 }
 
 .main-container .button-2 {
@@ -245,8 +282,8 @@
     width: 80%;
     height: auto;
     margin: 650px auto;
-    
     background: none;
+
 }
 
 .secondary-article {
@@ -254,8 +291,6 @@
     position: absolute;
     align-items: center;
     max-width: 1400px;
-
-
 }
 .secondary-article .buttons {
     text-align: center;
@@ -307,9 +342,6 @@
     outline: none;
 }
 
-.divider {
-    padding:0 0 0 170px;
-}
 .secondary-container .button-1 {
     background: rgb(42, 118, 224);
     color: white;
