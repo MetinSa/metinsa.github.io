@@ -33,11 +33,4 @@ document.addEventListener('DOMContentLoaded', function () {
          navbar.classList.remove("sticky");
       }
    }
-
-   /*Toggle between adding and removing the "responsive" class to topnav
-   when the user clicks on the icon*/
-
-   function myFunctionForResponsive() {
-      navbar.classList.toggle('responsive');
-   }
 })

@@ -6,7 +6,15 @@
     box-sizing: border-box;
 }
 
+body {
+    position: relative;
+    min-height: 100%;
+    min-height: 100vh;
+}
 
+.header-wrapper { 
+    min-height: 90px; 
+ }
 .header{
     width: 100%;
     height: 90px;
@@ -70,7 +78,7 @@
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
 }
 
 .sticky + .content {
@@ -80,6 +88,7 @@
 .footer{
     position: absolute;
     display: flex;
+    flex: 0;
     bottom: 0;
     width: 100%;
     height: 1rem;            /* Footer height */
@@ -89,6 +98,8 @@
     color: rgb(119, 118, 131);
     font-family: 'Asap', sans-serif;
     font-size: 16px;
+    margin-bottom: 0px;
+    flex-shrink: 0;
 }
 
 .footer .copyright{
@@ -189,7 +200,7 @@
     justify-content: center;
     width: 80%;
     height: auto;
-    margin: 150px auto;
+    margin: 100px auto;
     background: none;
     flex-wrap: wrap;
 }
@@ -375,4 +386,57 @@
     background-color:rgb(32, 84, 156);
     border-color: rgb(32, 84, 156);
     color: white;
+}
+
+/*
+ABOUT
+*/
+
+
+.picture-container {
+    display: flex;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    border: solid 10px white;
+    margin-top: 100px;
+    background: url('images/me-lapalma.jpg')no-repeat center center;
+    background-size: cover;
+    box-shadow: 0px 8px 16px 5px rgba(143, 143, 143, 0.308);
+}
+.picture-container h1{
+    color: white;
+    font-family: 'Sacramento', cursive;
+    font-weight: 100;
+    font-size: 100px;
+}
+
+.about-info {
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    align-items: center;
+    width: 60%;
+    height: 500px;
+}
+
+
+.about-info h3{
+    color: rgb(85, 84, 92);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.about-info p {
+    color: rgb(119, 118, 131);
+    font-family: 'Roboto', light;
+    font-size: 18px;
+    line-height: 1.6;
+    padding-bottom: 500px;
 }
