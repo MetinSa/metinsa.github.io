@@ -89,7 +89,7 @@ body {
     position: absolute;
     display: flex;
     flex: 0;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
     height: 1rem;            /* Footer height */
     border-top: 2px solid rgba(119, 118, 131, 0.137);
@@ -121,6 +121,7 @@ body {
     padding-top: 50px;
     text-align: left;
     font-size: 16;
+    padding-bottom: 80px;
 }
 .footer .info li {
     margin: 0 0 10px 0
@@ -224,7 +225,7 @@ body {
 }
 
 .main-article h1{
-    color: rgb(85, 84, 92);
+    color: rgb(53, 53, 56);
     font-family: 'Quicksand', sans-serif;
     font-weight: 100;
     font-size: 60px;
@@ -321,7 +322,7 @@ body {
 }
 
 .secondary-article h1{
-    color: rgb(85, 84, 92);
+    color: rgb(53, 53, 56);
     font-family: 'Quicksand', sans-serif;
     font-weight: 100;
     font-size: 60px;
@@ -392,51 +393,90 @@ body {
 ABOUT
 */
 
+.background {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 90px);
+    background-image: url('images/fall2.jpg');
+    background-size: cover;
+    justify-content: center;
+}
 
-.picture-container {
+
+.background h1{
     display: flex;
     position: relative;
-    margin: auto;
-    justify-content: center;
-    width: 500px;
-    height: 500px;
-    border: solid 10px white;
-    margin-top: 100px;
-    background: url('images/me-lapalma.jpg')no-repeat center center;
-    background-size: cover;
-    box-shadow: 0px 8px 16px 5px rgba(143, 143, 143, 0.308);
-}
-.picture-container h1{
+    align-self: center;
     color: white;
-    font-family: 'Sacramento', cursive;
-    font-weight: 100;
-    font-size: 100px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    padding-bottom: 16px;
 }
 
-.about-info {
+.background h1:before{
+    content: "";
+    width: 150px;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: -165px;
+    top: calc(50% - 8px);
+}
+
+.background h1:after{
+    content: "";
+    width: 150px;
+    height: 3px;
+    background: white;
+    position: absolute;
+    right: -165px;
+    top: calc(50% - 8px);
+}
+
+.background li {
+    color: white;
+    display: flex;
+    position: relative;
+    align-self: center;
+    font-family: 'Asap', sans-serif;
+}
+
+.about {
     display:flex;
     flex-direction: column;
     position: relative;
     margin: auto;
+    padding-top: 50px;
     align-items: center;
     width: 60%;
-    height: 500px;
+    height: 700px;
 }
 
-
-.about-info h3{
-    color: rgb(85, 84, 92);
+.about h1 {
     font-family: 'Quicksand', sans-serif;
-    font-weight: 100;
+    font-weight: 200;
+    color: rgb(53, 53, 56);
+    padding-bottom: 20px; 
     font-size: 40px;
-    padding-top: 70px;
-    padding-bottom: 40px;
+}
+.about h2 {
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(85, 84, 92);
+    font-weight: 200;
+    padding-bottom: 40px; 
+    font-size: 30px;
 }
 
-.about-info p {
-    color: rgb(119, 118, 131);
-    font-family: 'Roboto', light;
-    font-size: 18px;
-    line-height: 1.6;
-    padding-bottom: 500px;
+.about .my-picture {
+    width: 300px;
+    height: 300px;
+    background: url('images/my-pic.jpg') center center;
+    background-size: cover;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
