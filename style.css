@@ -23,7 +23,8 @@ body {
     z-index: 9999
 }
 .inner_header{
-    width: 95%;
+    display: flex;
+    width: 70%;
     height: 100%;
     margin: 0 auto;
 }
@@ -34,7 +35,7 @@ body {
     float: left;
 }
 .logo_container h1{
-    color: rgb(241, 105, 81);
+    color: rgb(233, 120, 100);
     height: 100%;
     display: table-cell;
     vertical-align: middle;
@@ -48,31 +49,25 @@ body {
 }
 
 .navigation{
-    float: left;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    margin: 0px 5px;
-}
-.navigation a, .work{
-    height: 100%;
-    display: table;
-    float: left;
-    padding: 0px 20px;
+    width: 80%;
+    padding:5px
 }
 
-.navigation a:last-child{
-    padding-right: 0;
-}
-.navigation a li{
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
-    color: rgb(119, 118, 131);
-    font-family: 'Asap', sans-serif;
-    font-weight: 600;
+.navigation li {
+    color: rgb(75, 75, 80);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     font-size: 16px;
+    margin:30px
 }
+
 .navigation li:hover, .navigation li:visited {
-    color:rgb(42, 118, 224);
+    color:rgb(233, 120, 100);
 }
 
 .sticky {
@@ -131,26 +126,27 @@ body {
 .dropdown {
     display: flex;
     float: right;
-    flex-direction: column;
+    flex-direction: column; 
     align-content: space-between;
 }
 
 .dropdown button {
     margin-top: 15%;
-    color: white;
+    color: rgb(233, 120, 100);
     border: none;
     width: 130px;
     height: 50px;
-    border-radius: 200px;
-    background: rgb(42, 118, 224);
-    font-family: 'Asap', sans-serif;
-    font-weight: 600;
-    font-size: 15px;
+    border-radius: 500px;
+    border: 1px solid rgb(233, 120, 100);
+    background: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     outline: none;
 }
 
 .dropdown button:hover{
-    background-color:rgb(32, 84, 156)
+    background-color:rgb(233, 120, 100);
+    color: white;
 }
 
 #dropdown-content a:hover li:hover{
@@ -403,6 +399,9 @@ ABOUT
     background-image: url('images/fall2.jpg');
     background-size: cover;
     justify-content: center;
+    background-repeat:no-repeat;
+    background-position-x: center;
+
 }
 
 
@@ -415,6 +414,7 @@ ABOUT
     font-weight: 400;
     font-size: 45px;
     padding-bottom: 16px;
+    
 }
 
 .background h1:before{
@@ -448,35 +448,239 @@ ABOUT
 .about {
     display:flex;
     flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
     position: relative;
     margin: auto;
-    padding-top: 50px;
     align-items: center;
     width: 60%;
-    height: 700px;
+    height:600px;
 }
 
 .about h1 {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 200;
-    color: rgb(53, 53, 56);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: rgb(40, 40, 44);
     padding-bottom: 20px; 
     font-size: 40px;
+    min-width: 500px;
+    text-align: center;
+
 }
 .about h2 {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
     color: rgb(85, 84, 92);
-    font-weight: 200;
+    font-weight: 300;
     padding-bottom: 40px; 
-    font-size: 30px;
+    font-size: 22px; 
+
 }
 
-.about .my-picture {
-    width: 300px;
-    height: 300px;
-    background: url('images/my-pic.jpg') center center;
-    background-size: cover;
+.about .my-picture img{
+    display: flex;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
+}
+
+.about-detailed {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    align-items: center;
+    width: 100%;
+    height: 900px;
+}
+.about-detailed .images{
+    display: flex;
+    flex-direction: row;
+
+} 
+.about-detailed .images li{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    color:white;
+    margin-top: auto;
+}
+.about-detailed .images #java{
+    position: relative;
+    font-size: 47px;
+    bottom: 21px;
+    left: 685px;
+    color: rgb(233, 120, 100);
+    z-index: 5
+}
+.about-detailed .images #laptop{
+    position: relative;
+    font-size: 170px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(233, 120, 100);
+    left: 0px;
+    bottom: 1px;
+    z-index: 4;
+}
+.about-detailed .images #desktop{
+    position: relative;
+    font-size: 300px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(233, 120, 100);
+}
+.about-detailed .images #mobile{
+    position: relative;
+    font-size: 100px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(233, 120, 100);
+    bottom: 0px;
+    right: 5px;
+}
+.about-detailed .images #coffee{
+    position: relative;
+    font-size: 80px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(233, 120, 100);
+    top: 4px;
+    left: 10px;
+}
+
+.about-detailed .images #python{
+    position: relative;
+    font-size: 100px;
+    bottom: 128px;
+    right: 375px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(233, 120, 100);
+}
+
+.about-detailed .colored-background {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    align-items: center;
+    width: 100%;
+    height: 700px; 
+    background-color: rgb(233, 120, 100);
+}
+
+.about-detailed .colored-background h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+
+
+.colored-background .text-position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 160px;
+}
+
+.colored-background .para {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    width: 700px;
+
+
+}
+
+.skills-container {
+    display: flex;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    align-content: stretch;
+    flex-direction: row;
+    height: 700px ;
+    width: 60%;
+    min-width: 800px;
+    border: 1px solid rgba(216, 216, 216, 0.712);
+    border-radius: 20px;
+    background: white;
+    top: -180px;
+    box-shadow: 0px 8px 6px -8px rgba(29, 29, 29, 0.178);
+}
+
+.skills-container h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: rgb(40, 40, 44);
+}
+
+.skills-container h3 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px; 
+    width: 200px;
+    color: rgb(233, 120, 100);
+    margin: auto;
+}
+
+.skills-container li, .skills-container p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: rgb(85, 84, 92);
+    font-weight: 300;
+    font-size: 18px; 
+    width: 250px;
+    margin: auto;
+}
+
+.skills-container .box-1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    border-right: 1px solid rgba(216, 216, 216, 0.712);
+}
+.skills-container .box-2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+} 
+
+
+.skills-container .box-3 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-left: 1px solid rgba(216, 216, 216, 0.712);
+}
+
+.skills-container .box-icon{
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 60px;
+    color: white;
+    text-align: center;
+
+}
+
+
+.my-work {
+    display: flex;
+    width: 100%;
+    height: 40%;
+    
 }
