@@ -35,7 +35,7 @@ body {
     float: left;
 }
 .logo_container h1{
-    color: rgb(233, 120, 100);
+    color: var(--theme-color);
     height: 100%;
     display: table-cell;
     vertical-align: middle;
@@ -67,7 +67,7 @@ body {
 }
 
 .navigation li:hover, .navigation li:visited {
-    color:rgb(233, 120, 100);
+    color:var(--theme-color);
 }
 
 .sticky {
@@ -132,12 +132,12 @@ body {
 
 .dropdown button {
     margin-top: 15%;
-    color: rgb(233, 120, 100);
+    color: var(--theme-color);
     border: none;
     width: 130px;
     height: 50px;
     border-radius: 500px;
-    border: 1px solid rgb(233, 120, 100);
+    border: 1px solid var(--theme-color);
     background: white;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -145,7 +145,7 @@ body {
 }
 
 .dropdown button:hover{
-    background-color:rgb(233, 120, 100);
+    background-color:var(--theme-color);
     color: white;
 }
 
@@ -388,6 +388,10 @@ body {
 /*
 ABOUT
 */
+:root {
+    --theme-color: rgb(254, 111, 97);
+    --ylva-color: rgb(211, 25, 56);
+}
 
 .background {
     position: relative;
@@ -454,7 +458,7 @@ ABOUT
     margin: auto;
     align-items: center;
     width: 60%;
-    height:600px;
+    height:800px;
 }
 
 .about h1 {
@@ -465,7 +469,26 @@ ABOUT
     font-size: 40px;
     min-width: 500px;
     text-align: center;
+}
 
+.about h1:before{
+    content: "";
+    width: 90px;
+    height: 4px;
+    background: rgb(40, 40, 44);
+    position: absolute;
+    margin-top: 22px;
+    margin-left: -105px; 
+}
+
+.about h1:after{
+    content: "";
+    width: 90px;
+    height: 4px;
+    background: rgb(40, 40, 44);
+    position: absolute;
+    margin-top: 22px;
+    margin-left: 15px; 
 }
 .about h2 {
     font-family: 'Roboto', sans-serif;
@@ -475,13 +498,21 @@ ABOUT
     font-weight: 300;
     padding-bottom: 40px; 
     font-size: 22px; 
-
 }
+.about h3 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: rgb(85, 84, 92);
+    font-weight: 300;
+    padding-top: 40px; 
+    font-size: 22px; 
+}
+
 
 .about .my-picture img{
     display: flex;
-    width: 250px;
-    height: 250px;
+    width: 320px;
+    height: 320px;
     border-radius: 50%;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
@@ -514,14 +545,14 @@ ABOUT
     font-size: 47px;
     bottom: 21px;
     left: 685px;
-    color: rgb(233, 120, 100);
+    color: var(--theme-color);
     z-index: 5
 }
 .about-detailed .images #laptop{
     position: relative;
     font-size: 170px;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgb(233, 120, 100);
+    -webkit-text-stroke-color: var(--theme-color);
     left: 0px;
     bottom: 1px;
     z-index: 4;
@@ -530,13 +561,13 @@ ABOUT
     position: relative;
     font-size: 300px;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgb(233, 120, 100);
+    -webkit-text-stroke-color: var(--theme-color);
 }
 .about-detailed .images #mobile{
     position: relative;
     font-size: 100px;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgb(233, 120, 100);
+    -webkit-text-stroke-color: var(--theme-color);
     bottom: 0px;
     right: 5px;
 }
@@ -544,7 +575,7 @@ ABOUT
     position: relative;
     font-size: 80px;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgb(233, 120, 100);
+    -webkit-text-stroke-color: var(--theme-color);
     top: 4px;
     left: 10px;
 }
@@ -555,7 +586,7 @@ ABOUT
     bottom: 128px;
     right: 375px;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgb(233, 120, 100);
+    -webkit-text-stroke-color: var(--theme-color);
 }
 
 .about-detailed .colored-background {
@@ -566,7 +597,7 @@ ABOUT
     align-items: center;
     width: 100%;
     height: 700px; 
-    background-color: rgb(233, 120, 100);
+    background-color: var(--theme-color);
 }
 
 .about-detailed .colored-background h1 {
@@ -622,13 +653,14 @@ ABOUT
     color: rgb(40, 40, 44);
 }
 
+
 .skills-container h3 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 18px; 
     width: 200px;
-    color: rgb(233, 120, 100);
+    color: var(--theme-color);
     margin: auto;
 }
 
