@@ -33,4 +33,46 @@ document.addEventListener('DOMContentLoaded', function () {
          navbar.classList.remove("sticky");
       }
    }
-})
+
+   function smooth_scroll(target, duration){
+      var target = document.querySelector(target);
+      var target_position = target.getBoundingClientRect().top - 90;
+      var start_position = window.pageYOffset;
+      var distance = target_position - start_position;
+      var start_time = null;
+   
+      function animation(current_time) {
+         if(start_time === null) start_time = current_time;
+         var time_elapsed = current_time - start_time;
+         var run = ease(time_elapsed, start_position, target_position, duration);
+         window.scrollTo(0, run);
+         if(time_elapsed < duration) requestAnimationFrame(animation);
+      }
+   
+      function ease(t, b, c, d) {
+         t /= d / 2;
+         if (t < 1) return c / 2 * t * t + b;
+         t--;
+         return -c / 2 * (t * (t - 2) -1) + b;
+      }
+   
+      requestAnimationFrame(animation);   
+   }
+   
+   var about_sec = document.querySelector(".abt");
+   var background_sec = document.querySelector(".bkg");
+   var work_sec = document.querySelector(".wrk");
+   var contact_sec = document.querySelector(".cnt");
+   about_sec.addEventListener('click', function(){
+      smooth_scroll('.about', 700);
+   })
+   background_sec.addEventListener('click', function(){
+      smooth_scroll('.backg', 700);
+   })
+   work_sec.addEventListener('click', function(){
+      smooth_scroll('.work', 700);
+   })
+   about_sec.addEventListener('click', function(){
+      smooth_scroll('.about', 700);
+   })
+});

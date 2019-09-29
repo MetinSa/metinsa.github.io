@@ -264,40 +264,21 @@ body {
 
 .about h1 {
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     color: rgb(40, 40, 44);
-    padding-bottom: 20px; 
+    padding-bottom: 40px; 
     font-size: 40px;
     min-width: 500px;
     text-align: center;
 }
 
-.about h1:before{
-    content: "";
-    width: 90px;
-    height: 4px;
-    background: rgb(40, 40, 44);
-    position: absolute;
-    margin-top: 22px;
-    margin-left: -105px; 
-}
-
-.about h1:after{
-    content: "";
-    width: 90px;
-    height: 4px;
-    background: rgb(40, 40, 44);
-    position: absolute;
-    margin-top: 22px;
-    margin-left: 15px; 
-}
 .about h2 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
 
-    color: rgb(85, 84, 92);
-    font-weight: 300;
-    padding-bottom: 40px; 
+    color: var(--theme-color);
+    font-weight: 500;
+    padding-bottom: 20px; 
     font-size: 22px; 
 }
 .about h3 {
@@ -329,6 +310,7 @@ body {
     align-items: center;
     width: 100%;
     height: 900px;
+    
 }
 .about-detailed .images{
     display: flex;
@@ -400,6 +382,7 @@ body {
     width: 100%;
     height: 700px; 
     background-color: var(--theme-color);
+    
 }
 
 .about-detailed .colored-background h1 {
@@ -445,6 +428,7 @@ body {
     background: white;
     top: -180px;
     box-shadow: 0px 8px 6px -8px rgba(29, 29, 29, 0.178);
+    
 }
 
 .skills-container h2 {
@@ -514,13 +498,15 @@ body {
 .backg{
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     margin: auto;
+    margin-top: -100px;
     width: 50%;
     min-width: 800px;
     max-width: 1000px;
-    height: 1000x;
+    height: 1100px;
+
 }
 
 .backg .bg{
@@ -530,6 +516,7 @@ body {
     height: 1000px;
     z-index: -1;
     background-color: var(--theme-color);
+    
 }
 
 .backg .title h1 {
@@ -538,9 +525,10 @@ body {
     color: rgb(40, 40, 44);
     padding-bottom: 20px; 
     font-size: 40px;
-    
+    margin-top: 100px;
     min-width: 500px;
     text-align: center;
+    
 }
 
 
@@ -559,6 +547,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    
 }
 
 .education .master {
