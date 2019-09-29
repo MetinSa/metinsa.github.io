@@ -34,6 +34,10 @@ body {
     display: table;
     float: left;
 }
+
+.logo_container a{
+    color: inherit;
+}
 .logo_container h1{
     color: var(--theme-color);
     height: 100%;
@@ -268,7 +272,7 @@ body {
     color: rgb(40, 40, 44);
     padding-bottom: 40px; 
     font-size: 40px;
-    min-width: 500px;
+    min-width: 800px;
     text-align: center;
 }
 
@@ -756,8 +760,7 @@ body {
 .work-container a {
     font-family: 'Roboto', sans-serif;
     color: var(--theme-color);
-    font-weight: 600;
-    text-decoration: underline;
+    font-weight: 400;
     font-size: 18px; 
 }
 

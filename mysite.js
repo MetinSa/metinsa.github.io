@@ -58,21 +58,21 @@ document.addEventListener('DOMContentLoaded', function () {
    
       requestAnimationFrame(animation);   
    }
-   
+   var home_sec = document.querySelector(".hme");   
    var about_sec = document.querySelector(".abt");
    var background_sec = document.querySelector(".bkg");
    var work_sec = document.querySelector(".wrk");
-   var contact_sec = document.querySelector(".cnt");
+
    about_sec.addEventListener('click', function(){
-      smooth_scroll('.about', 700);
+      smooth_scroll('.about', 800);
    })
    background_sec.addEventListener('click', function(){
-      smooth_scroll('.backg', 700);
+      smooth_scroll('.backg', 800);
    })
    work_sec.addEventListener('click', function(){
-      smooth_scroll('.work', 700);
+      smooth_scroll('.work', 800);
    })
-   about_sec.addEventListener('click', function(){
-      smooth_scroll('.about', 700);
+   home_sec.addEventListener('click', function(){
+      smooth_scroll('.background', 800);
    })
 });
