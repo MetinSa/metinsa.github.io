@@ -63,7 +63,7 @@ body {
 }
 
 .navigation li {
-    color: rgb(75, 75, 80);
+    color: rgb(40, 40, 44);
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 16px;
@@ -197,7 +197,7 @@ body {
     --theme-color: rgb(254, 111, 97);
     --ylva-color: rgb(211, 25, 56);
 }
-
+/* 
 .background {
     position: relative;
     display: inline-flex;
@@ -252,25 +252,26 @@ body {
     position: relative;
     align-self: center;
     font-family: 'Asap', sans-serif;
-}
+} */
 
 .about {
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     vertical-align: middle;
     position: relative;
     margin: auto;
     align-items: center;
-    width: 60%;
-    height:800px;
+    width: 900px;
+    height:500px;
+    padding-top: 50px;
 }
 
 .about h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     color: rgb(40, 40, 44);
-    padding-bottom: 40px; 
+    padding-bottom: 30px; 
     font-size: 40px;
     min-width: 800px;
     text-align: center;
@@ -279,26 +280,17 @@ body {
 .about h2 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-
-    color: var(--theme-color);
-    font-weight: 500;
-    padding-bottom: 20px; 
-    font-size: 22px; 
-}
-.about h3 {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    color: rgb(85, 84, 92);
+    color: rgb(40, 40, 44);
     font-weight: 300;
-    padding-top: 40px; 
     font-size: 22px; 
+    margin-bottom: 50px;
 }
 
 
 .about .my-picture img{
     display: flex;
-    width: 320px;
-    height: 320px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
@@ -313,29 +305,25 @@ body {
     margin: auto;
     align-items: center;
     width: 100%;
-    height: 900px;
+    height: 1000px;
     
 }
 .about-detailed .images{
     display: flex;
-    flex-direction: row;
-
-} 
-.about-detailed .images li{
-    display: flex;
-    justify-content: space-around;
-    align-self: center;
-    color:white;
-    margin-top: auto;
-}
-.about-detailed .images #java{
     position: relative;
-    font-size: 47px;
-    bottom: 21px;
-    left: 685px;
+    height: auto;
+    width: 800px;
+} 
+
+.about-detailed #desktop{
+    position: relative;
+    width: 900px;
     color: var(--theme-color);
-    z-index: 5
+    z-index: 0;
+    top: 21px;
 }
+
+/*
 .about-detailed .images #laptop{
     position: relative;
     font-size: 170px;
@@ -375,7 +363,7 @@ body {
     right: 375px;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: var(--theme-color);
-}
+} */
 
 .about-detailed .colored-background {
     display: flex;
@@ -425,10 +413,9 @@ body {
     align-content: stretch;
     flex-direction: row;
     height: 700px ;
-    width: 60%;
-    min-width: 800px;
+    width: 1200px;
     border: 1px solid rgba(216, 216, 216, 0.712);
-    border-radius: 20px;
+    border-radius: 15px;
     background: white;
     top: -180px;
     box-shadow: 0px 8px 6px -8px rgba(29, 29, 29, 0.178);
@@ -447,7 +434,7 @@ body {
 .skills-container h3 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 18px; 
     width: 200px;
     color: var(--theme-color);
@@ -461,7 +448,7 @@ body {
     color: rgb(85, 84, 92);
     font-weight: 300;
     font-size: 18px; 
-    width: 250px;
+    width: 300px;
     margin: auto;
 }
 
@@ -491,7 +478,7 @@ body {
 
 .skills-container .box-icon{
     position: relative;
-    margin-top: 40px;
+    margin-top: 70px;
     margin-bottom: 30px;
     height: 60px;
     color: white;
@@ -503,25 +490,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
     margin: auto;
     margin-top: -100px;
     width: 50%;
     min-width: 800px;
     max-width: 1000px;
     height: 1100px;
-
 }
 
-.backg .bg{
-    position: absolute;
-    margin-top: 300px;
-    width: 100vw;
-    height: 1000px;
-    z-index: -1;
-    background-color: var(--theme-color);
-    
-}
 
 .backg .title h1 {
     font-family: 'Roboto', sans-serif;
@@ -529,10 +505,9 @@ body {
     color: rgb(40, 40, 44);
     padding-bottom: 20px; 
     font-size: 40px;
-    margin-top: 100px;
     min-width: 500px;
     text-align: center;
-    
+    padding-top: 50px;
 }
 
 
@@ -647,19 +622,19 @@ body {
     flex-direction: column;
     margin:auto;
     width: 100%;
-    height: 800px;
+    height: 750px;
     justify-content: flex-start;
 }
 .work .bg{
     background-color: var(--theme-color);
     position: absolute;
     width: 100%;
-    height: 500px;
+    height: 400px;
     z-index: -1;
 }
 .work .info {
     display: flex;
-    margin-top: 120px;
+    margin-top: 70px;
     flex-direction: column;
     text-align: center;
 }
@@ -679,10 +654,11 @@ body {
     line-height: 1.5;
     width: 600px;
     margin: auto;
+    margin-bottom: 70px;
 }
 
 .work-container {
-    margin-top: 100px;
+    margin-top: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
