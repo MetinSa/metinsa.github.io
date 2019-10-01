@@ -12,8 +12,8 @@ body {
     min-height: 100vh;
 }
 
-.header-wrapper { 
-    min-height: 90px; 
+.header-wrapper {
+    min-height: 90px;
  }
 .header{
     width: 100%;
@@ -63,7 +63,7 @@ body {
 }
 
 .navigation li {
-    color: rgb(40, 40, 44);
+    color: rgb(42, 42, 53);
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 16px;
@@ -134,7 +134,7 @@ body {
 .dropdown {
     display: flex;
     float: right;
-    flex-direction: column; 
+    flex-direction: column;
     align-content: space-between;
 }
 
@@ -197,62 +197,7 @@ body {
     --theme-color: rgb(254, 111, 97);
     --ylva-color: rgb(211, 25, 56);
 }
-/* 
-.background {
-    position: relative;
-    display: inline-flex;
-    flex-direction: column;
-    display: flex;
-    width: 100%;
-    height: calc(100vh - 90px);
-    background-image: url('images/fall2.jpg');
-    background-size: cover;
-    justify-content: center;
-    background-repeat:no-repeat;
-    background-position-x: center;
 
-}
-
-
-.background h1{
-    display: flex;
-    position: relative;
-    align-self: center;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
-    font-size: 45px;
-    padding-bottom: 16px;
-    
-}
-
-.background h1:before{
-    content: "";
-    width: 150px;
-    height: 3px;
-    background: white;
-    position: absolute;
-    left: -165px;
-    top: calc(50% - 8px);
-}
-
-.background h1:after{
-    content: "";
-    width: 150px;
-    height: 3px;
-    background: white;
-    position: absolute;
-    right: -165px;
-    top: calc(50% - 8px);
-}
-
-.background li {
-    color: white;
-    display: flex;
-    position: relative;
-    align-self: center;
-    font-family: 'Asap', sans-serif;
-} */
 
 .about {
     display:flex;
@@ -263,15 +208,15 @@ body {
     margin: auto;
     align-items: center;
     width: 900px;
-    height:500px;
+    height:550px;
     padding-top: 50px;
 }
 
 .about h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
-    color: rgb(40, 40, 44);
-    padding-bottom: 30px; 
+    color: rgb(42, 42, 53);
+    padding-bottom: 30px;
     font-size: 40px;
     min-width: 800px;
     text-align: center;
@@ -280,9 +225,9 @@ body {
 .about h2 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    color: rgb(40, 40, 44);
+    color: rgb(42, 42, 53);
     font-weight: 300;
-    font-size: 22px; 
+    font-size: 22px;
     margin-bottom: 50px;
 }
 
@@ -294,7 +239,7 @@ body {
     border-radius: 50%;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
-    
+
 }
 
 .about-detailed {
@@ -306,7 +251,7 @@ body {
     align-items: center;
     width: 100%;
     height: 1050px;
-    
+
 }
 .about-detailed .images{
     display: flex;
@@ -314,7 +259,7 @@ body {
     height: auto;
     width: 800px;
     bottom: 2px;
-} 
+}
 
 .about-detailed #desktop{
     position: relative;
@@ -324,48 +269,6 @@ body {
     top: 21px;
 }
 
-/*
-.about-detailed .images #laptop{
-    position: relative;
-    font-size: 170px;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: var(--theme-color);
-    left: 0px;
-    bottom: 1px;
-    z-index: 4;
-}
-.about-detailed .images #desktop{
-    position: relative;
-    font-size: 300px;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: var(--theme-color);
-}
-.about-detailed .images #mobile{
-    position: relative;
-    font-size: 100px;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: var(--theme-color);
-    bottom: 0px;
-    right: 5px;
-}
-.about-detailed .images #coffee{
-    position: relative;
-    font-size: 80px;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: var(--theme-color);
-    top: 4px;
-    left: 10px;
-}
-
-.about-detailed .images #python{
-    position: relative;
-    font-size: 100px;
-    bottom: 128px;
-    right: 375px;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: var(--theme-color);
-} */
-
 .about-detailed .colored-background {
     display: flex;
     justify-content: center;
@@ -373,9 +276,9 @@ body {
     margin: auto;
     align-items: center;
     width: 100%;
-    height: 700px; 
+    height: 700px;
     background-color: var(--theme-color);
-    
+
 }
 
 .about-detailed .colored-background h1 {
@@ -420,7 +323,7 @@ body {
     background: white;
     top: -180px;
     box-shadow: 0px 8px 6px -8px rgba(29, 29, 29, 0.178);
-    
+
 }
 
 .skills-container h2 {
@@ -428,7 +331,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 22px;
-    color: rgb(40, 40, 44);
+    color: rgb(42, 42, 53);
 }
 
 
@@ -436,7 +339,7 @@ body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 18px; 
+    font-size: 18px;
     width: 200px;
     color: var(--theme-color);
     margin: auto;
@@ -448,7 +351,7 @@ body {
     line-height: 1.6;
     color: rgb(85, 84, 92);
     font-weight: 300;
-    font-size: 18px; 
+    font-size: 18px;
     width: 300px;
     margin: auto;
 }
@@ -466,7 +369,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-} 
+}
 
 
 .skills-container .box-3 {
@@ -503,8 +406,8 @@ body {
 .backg .title h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    color: rgb(40, 40, 44);
-    padding-bottom: 20px; 
+    color: rgb(42, 42, 53);
+    padding-bottom: 20px;
     font-size: 40px;
     min-width: 500px;
     text-align: center;
@@ -518,8 +421,8 @@ body {
     min-width: 600px;
     color: rgb(85, 84, 92);
     font-weight: 300;
-    padding-bottom: 100px; 
-    font-size: 22px; 
+    padding-bottom: 100px;
+    font-size: 22px;
 }
 
 .education{
@@ -527,7 +430,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    
+
 }
 
 .education .master {
@@ -569,7 +472,7 @@ body {
 }
 
 .education h1:hover{
-    color: rgb(65, 161, 251);
+    color: rgb(107, 183, 255);
 }
 
 .education a{
@@ -587,7 +490,7 @@ body {
 
 .education h3 {
     font-family: 'Roboto', sans-serif;
-    color: rgb(40, 40, 44);
+    color: rgb(42, 42, 53);
     font-weight: 500;
     font-size: 16px;
     margin-bottom: 30px;
@@ -599,7 +502,7 @@ body {
     line-height: 1.6;
     color: rgb(85, 84, 92);
     font-weight: 300;
-    font-size: 16px; 
+    font-size: 16px;
 }
 
 .education .img {
@@ -693,7 +596,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+
 }
 .project-1 .title{
     display: flex;
@@ -706,7 +609,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+
 }
 .project-2 .title{
     display: flex;
@@ -718,7 +621,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 22px;
-    color: rgb(40, 40, 44);
+    color: rgb(42, 42, 53);
     margin-left: 20px;
     margin-top: 10px;
 }
@@ -729,7 +632,7 @@ body {
     line-height: 1.6;
     color: rgb(85, 84, 92);
     font-weight: 300;
-    font-size: 18px; 
+    font-size: 18px;
     width: 300;
     margin: auto;
 }
@@ -738,7 +641,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--theme-color);
     font-weight: 400;
-    font-size: 18px; 
+    font-size: 18px;
 }
 
 .work-container a:hover{
@@ -765,8 +668,8 @@ body {
 .work-more h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    color: rgb(40, 40, 44);
-    padding-bottom: 40px; 
+    color: rgb(42, 42, 53);
+    padding-bottom: 40px;
     font-size: 25px;
 }
 .work-more p {
@@ -774,8 +677,8 @@ body {
     line-height: 1.6;
     color: rgb(85, 84, 92);
     font-weight: 300;
-    font-size: 18px; 
-    padding-bottom: 40px; 
+    font-size: 18px;
+    padding-bottom: 40px;
 
 }
 

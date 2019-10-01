@@ -36,11 +36,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
    function smooth_scroll(target, duration){
       var target = document.querySelector(target);
-      var target_position = target.getBoundingClientRect().top - 90;
+      var target_position = target.getBoundingClientRect().top - 89;
       var start_position = window.pageYOffset;
       var distance = target_position - start_position;
       var start_time = null;
-   
+
       function animation(current_time) {
          if(start_time === null) start_time = current_time;
          var time_elapsed = current_time - start_time;
@@ -48,31 +48,31 @@ document.addEventListener('DOMContentLoaded', function () {
          window.scrollTo(0, run);
          if(time_elapsed < duration) requestAnimationFrame(animation);
       }
-   
+
       function ease(t, b, c, d) {
          t /= d / 2;
          if (t < 1) return c / 2 * t * t + b;
          t--;
          return -c / 2 * (t * (t - 2) -1) + b;
       }
-   
-      requestAnimationFrame(animation);   
+
+      requestAnimationFrame(animation);
    }
-   var home_sec = document.querySelector(".hme");   
+   var home_sec = document.querySelector(".hme");
    var about_sec = document.querySelector(".abt");
    var background_sec = document.querySelector(".bkg");
    var work_sec = document.querySelector(".wrk");
 
-   about_sec.addEventListener('click', function(){
+   home_sec.addEventListener('click', function () {
       smooth_scroll('.about', 800);
+   })
+   about_sec.addEventListener('click', function(){
+      smooth_scroll('.colored-background', 800);
    })
    background_sec.addEventListener('click', function(){
       smooth_scroll('.backg', 800);
    })
    work_sec.addEventListener('click', function(){
       smooth_scroll('.work', 800);
-   })
-   home_sec.addEventListener('click', function(){
-      smooth_scroll('.background', 800);
    })
 });
