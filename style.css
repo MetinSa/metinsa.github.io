@@ -263,7 +263,7 @@ body {
     margin: auto;
     align-items: center;
     width: 900px;
-    height:400px;
+    height:500px;
     padding-top: 50px;
 }
 
@@ -313,7 +313,7 @@ body {
     position: relative;
     height: auto;
     width: 800px;
-    top: 93px;
+    bottom: 2px;
 } 
 
 .about-detailed #desktop{
