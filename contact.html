@@ -21,28 +21,32 @@
                     <h1> <a class="hme" href="index.html"> metin<span>san</span>  </a> </h1>
                 </div>
                 <ul class="navigation">
-                    <object type="image/svg+xml" data="images/email.svg" class="logo-center"></object>
                 </ul>
                 <div class="return">
-                   <a href="index.html"><i class="fas fa-times"></i></a>
+                <div class="tooltip"><a href="index.html"><i class="fas fa-times"></i></a>
+                    <span class="tooltiptext">Return</span>
+                </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="contact-img">
+        <object type="image/svg+xml" data="images/email.svg" class="logo-center"></object>
     </div>
     <div class="contact-title">
         <h1>Thanks for reaching out to me. How can I help you?</h1>
     </div>
 
-    <form action="contactform.php" method="post">
+    <form action="https://formspree.io/xrwnjwlm" method="POST">
         <div class="form-container">
             <div class="row-1">
                 <div class="label-item">
                     <label>Name</label>
-                    <input type="text" class="form-name" name="name">
+                    <input required type="text" class="form-name" name="name">
                 </div>
                 <div class="label-item">
                     <label>Email</label>
-                    <input type="text" class="form-email" name="email">
+                    <input type="email" class="form-email" name="email">
                 </div>
             </div>
             <div class="row-2">
