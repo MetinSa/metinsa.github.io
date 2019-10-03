@@ -27,15 +27,13 @@ body {
     width: 85%;
     height: 100%;
     margin: 0 auto;
-    justify-content: space-between;
-    flex-grow: 1;
-    flex-basis: 0;
 }
 
 .logo_container{
     height: 100%;
     display: table;
     float: left;
+    flex: 1;
 
 }
 
@@ -63,7 +61,9 @@ body {
     align-items: center;
     height: 100%;
     width: 80%;
-    padding:5px
+    padding:5px;
+    flex: 2;
+
 }
 
 .navigation li {
@@ -136,9 +136,14 @@ body {
     margin: 0 0 10px 0
 }
 
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
 
 .contact button {
-    margin-top: 15%;
     color: var(--theme-color);
     border: none;
     width: 130px;
@@ -175,8 +180,8 @@ body {
     position: relative;
     margin: auto;
     align-items: center;
-    width: 1000px;
-    height:500px;
+    max-width: 1000px;
+    max-height:500px;
     padding-top: 100px;
 }
 
@@ -278,6 +283,7 @@ body {
 
 }
 
+
 .skills-container {
     display: flex;
     position: relative;
@@ -294,6 +300,14 @@ body {
     box-shadow: 0px 8px 6px -8px rgba(29, 29, 29, 0.178);
 
 }
+
+/* @media screen and (max-width:600px) {
+    .skills-container {
+        flex-direction: column;
+        width: 100%;
+
+    }
+  } */
 
 .skills-container h2 {
     text-align: center;
