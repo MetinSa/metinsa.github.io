@@ -21,7 +21,7 @@
         <div class="header" id="my-header">
             <div class="inner_header">
                 <div class="logo_container">
-                    <h1> <a class="hme" href="#"> metin<span>san</span>  </a> </h1>
+                    <h1> <a class="hme" href="#"> metin<span></span>san</span>  </a> </h1>
                 </div>
                 <ul class="navigation">
                     <a class="abt" href="#"><li>About</li></a>
@@ -32,6 +32,21 @@
                     <button class="button-contact">
                        <a href="contact.html"> Contact </a>
                     </button>
+                </div>
+                <div class="menu">
+                    <div class="icon">
+                        <button><i onclick="toggle_visibility('dropdown')" id="icon" class="fas fa-align-justify"></i></button>
+                    </div>
+                    <div class="dropdown" id="dropdown">
+                        <ul class="navigation-dropdown">
+                            <a class="abt" href="#"><li>About</li></a>
+                            <a class="bkg" href="#"><li>Background</li></a>
+                            <a class="wrk" href="#"><li>My Work</li></a>
+                            <div class="dropdown-contact">
+                                <button><a href="contact.html"> Contact </a></button> 
+                            </div>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

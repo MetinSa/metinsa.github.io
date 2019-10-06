@@ -1,9 +1,17 @@
 function toggle_visibility(id) {
-    var x = document.getElementById(id);
-    if(x.style.display == 'block')
-       x.style.display = 'none';
-    else
-       x.style.display = 'block';
+   var x = document.getElementById(id);
+   if(x.style.display == 'block')
+      x.style.display = 'none';
+   else
+      x.style.display = 'block';
+
+   y = document.getElementById("icon");
+   if (y.classList == 'fas fa-align-justify') {
+      y.classList = 'fas fa-times';
+   }
+   else if (y.classList == 'fas fa-times') {
+      y.classList = 'fas fa-align-justify';
+   }
  }
 
 document.addEventListener('DOMContentLoaded', function () {
