@@ -190,6 +190,19 @@ body {
 .inner-footer .info li {
     margin: 0 0 10px 0;
 }
+@media only screen and (max-width:800px) {
+    .footer {
+        height: 170px;
+        text-align: center;
+    }
+    .inner-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+
 
 /* Contact Page */
 .contact-title {
@@ -210,6 +223,7 @@ body {
 .form-container {
     display: flex;
     flex-direction: column;
+    width: 90%;
     max-width: 600px;
     height: 600px; 
     margin: auto;
@@ -254,7 +268,7 @@ body {
     font-size: 20px;
     color: rgb(34, 34, 36);
 }
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:700px) {
     .form-container {
         display: flex;
         justify-content: flex-start;
@@ -322,6 +336,11 @@ body {
     height:550px;
     margin-top: 100px;
 }
+@media only screen and (max-width:700px) {
+    .introduction {
+        max-width: 80%;
+    }
+}
 .introduction h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
@@ -338,6 +357,8 @@ body {
     font-weight: 300;
     font-size: 22px;
     margin-bottom: 50px;
+    min-width: 500px;
+
 }
 .introduction .my-picture img{
     display: flex;
@@ -361,6 +382,11 @@ body {
     max-height: 300px;
     width: 100%;
     margin-bottom: -15px;
+}
+@media only screen and (max-width:700px) {
+    .about img{
+        margin-bottom: -10px;
+    }
 }
 .about .background {
     width: 100%;
@@ -395,7 +421,6 @@ body {
     font-size: 20px;
     line-height: 1.5;
     margin: auto;
-
 }
 .skills-container {
     display: flex;
@@ -403,7 +428,7 @@ body {
     justify-content: center;
     flex-direction: row;
     margin-top: -150px;
-    height: 750px ;
+    height: 850px ;
     width: 90%;
     max-width: 1200px;
     border: 1px solid rgba(216, 216, 216, 0.712);
@@ -411,7 +436,35 @@ body {
     background: white;
     box-shadow: 0px 8px 6px -8px rgba(29, 29, 29, 0.178);
 }
-.skills-container .box-1{
+@media only screen and (max-width:800px) {
+    .skills-container {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        margin: auto;
+        margin-top: -70px;
+        justify-content: center;
+        height: 2000px;
+        width: 80%;
+        max-width: 450px;
+    }
+    .skills-container .box-1 {
+        border-bottom: 1px solid rgba(216, 216, 216, 0.712);
+    }
+    .skills-container .box-2 {
+        border-bottom: 1px solid rgba(216, 216, 216, 0.712);
+    }
+}
+@media only screen and (min-width:800px) {
+    .skills-container .box-1 {
+        border-right: 1px solid rgba(216, 216, 216, 0.712);
+    }
+    .skills-container .box-2 {
+        border-right: 1px solid rgba(216, 216, 216, 0.712);
+    }
+}
+
+.skills-container .box-1 {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -465,50 +518,40 @@ body {
     color: white;
 }
 
-
-
-
+/* Background */
 .backg{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin: auto;
-    width: 50%;
-    min-width: 800px;
+    width: 80%;
     max-width: 1000px;
+    min-width:750px;
     height: 1100px;
+    padding-top: 100px;
 }
-
-
 .backg .title h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: rgb(42, 42, 53);
-    padding-bottom: 40px;
+    margin-bottom: 40px;
     font-size: 40px;
-    min-width: 500px;
     text-align: center;
-    padding-top: 50px;
 }
-
-
 .backg .title h2 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    min-width: 600px;
     color: rgb(42, 42, 53);
     font-weight: 300;
-    padding-bottom: 100px;
+    margin-bottom: 100px;
     font-size: 20px;
     width: 100%;
 }
-
 .education{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-
 }
 
 .education .master {
@@ -517,30 +560,25 @@ body {
     margin-bottom: 70px;
     justify-content: space-around;
 }
-
 .master .info {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    max-width: 600px;
     margin-left: 40px;
-
 }
-
 .education .bachelor{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 200px;
-
 }
-
 .bachelor .info {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    max-width: 600px;
     margin-left: 40px;
-}
 
+}
 .education h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -548,15 +586,12 @@ body {
     color: rgb(20, 133, 238);
     margin-bottom: 8px;
 }
-
 .education h1:hover{
     color: rgb(107, 183, 255);
 }
-
 .education a{
     color: inherit;
 }
-
 .education h2 {
     font-family: 'Roboto', sans-serif;
     color: rgb(48, 149, 17);
@@ -564,16 +599,13 @@ body {
     font-size: 16px;
     margin-bottom: 8px;
 }
-
 .education h3 {
     font-family: 'Roboto', sans-serif;
     color: rgb(42, 42, 53);
     font-weight: 500;
     font-size: 16px;
     margin-bottom: 30px;
-
 }
-
 .education p {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -581,24 +613,66 @@ body {
     font-weight: 300;
     font-size: 16px;
 }
-
 .education .img {
     display: flex;
     justify-content: center;
     width: 300px;
     height: 250px;
     border-radius: 40px;
-
     background: rgba(136, 136, 136, 0.178);
 }
-
 .education .img img{
     width: 300px;
     height: 250px;
     border-radius: 40px;
-
 }
 
+@media only screen and (max-width:800px) {
+    .backg{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto;
+        height: 1660px;
+        margin-bottom: 100px;
+        min-width: 450px;
+
+    }
+    .education {
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        margin: auto;
+        flex: 1;
+    }
+    .backg .title h2 {
+        margin-bottom: 50px;
+    }
+    .education .master {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+    }
+    .education .img {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 300px;
+        height: 250px;
+        border-radius: 40px;
+        background: rgba(136, 136, 136, 0.178);
+        margin-bottom: 30px;
+    }
+    .education .bachelor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+    }
+}
 .work{
     display: flex;
     flex-direction: column;
@@ -609,7 +683,6 @@ body {
 }
 .work .bg{
     background-color: var(--theme-color);
-    position: absolute;
     width: 100%;
     height: 500px;
     z-index: -1;
@@ -620,13 +693,12 @@ body {
     flex-direction: column;
     text-align: center;
 }
-
 .work .info h1 {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 .work .info h2{
     color: white;
@@ -634,67 +706,54 @@ body {
     font-weight: 300;
     font-size: 20px;
     line-height: 1.5;
-    width: 700px;
     margin: auto;
-    margin-bottom: 60px;
+    width: 80%;
 }
-
 .work-container {
-    margin-top: 50px;
     display: flex;
+    margin-top: -150px;
     flex-direction: row;
     justify-content: space-between;
-    height: 400px;
-    width: 930px;
+    text-align: center;
+    height: 350px;
+    width: 90%;
+    max-width: 930px;
     margin-left: auto;
     margin-right: auto;
 }
 .work-container .project-1 {
-    width: 450px;
-    height: 350px;
-    border: 1px solid rgba(216, 216, 216, 0.712);
-    border-radius: 15px;
-    background: white;
-    box-shadow: 0px 8px 6px -8px rgba(29, 29, 29, 0.178);
-
-}
-.work-container .project-2 {
-    width: 450px;
-    height: 350px;
-    border: 1px solid rgba(216, 216, 216, 0.712);
-    border-radius: 15px;
-    background: white;
-    box-shadow: 0px 8px 6px -8px rgba(29, 29, 29, 0.178);
-
-}
-
-.project-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    width: 48%;
+    min-height: 340px;
+    border: 1px solid rgba(216, 216, 216, 0.712);
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0px 8px 6px -8px rgba(29, 29, 29, 0.178);
+}
+.work-container .project-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    border: 1px solid rgba(216, 216, 216, 0.712);
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0px 8px 6px -8px rgba(29, 29, 29, 0.178);
+    min-height: 340px;
 }
 .project-1 .title{
     display: flex;
     flex-direction: row;
-
-}
-.project-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
 }
 .project-2 .title{
     display: flex;
     flex-direction: row;
-
 }
-
 .work-container h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -731,7 +790,26 @@ body {
     width: 50px;
     height: 50px;
 }
-
+@media only screen and (max-width:800px) {
+    .work {
+        height: 1200px;
+    }
+    .work-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        height: 700px;
+        margin-top: -150px;
+    }
+    .work-container .project-1 {
+        width: 400px;
+    }
+    .work-container .project-2 {
+        width: 400px;
+    }
+}
 .work-more {
     display: flex;
     justify-content: flex-start;
@@ -740,7 +818,8 @@ body {
     align-items: center;
     text-align: center;
     margin: auto;
-    width: 800px;
+    max-width: 800px;
+    width: 80%;
     height: 400px;
 }
 .work-more h1 {

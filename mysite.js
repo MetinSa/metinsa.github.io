@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
       smooth_scroll('.about', 800);
    })
    about_sec.addEventListener('click', function(){
-      smooth_scroll('.colored-background', 800);
+      smooth_scroll('.background', 800);
    })
    background_sec.addEventListener('click', function(){
       smooth_scroll('.backg', 800);
