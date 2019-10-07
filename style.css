@@ -155,6 +155,12 @@ body {
   padding-top: 102px;
 }
 @media only screen and (max-width:800px) {
+    .inner_header {
+        width: 90%;
+    }
+    .logo_container h1 {
+        font-size: 28px;
+    }
     .navigation {
         display: none;
     }
@@ -431,11 +437,6 @@ body {
     height:550px;
     margin-top: 100px;
 }
-@media only screen and (max-width:700px) {
-    .introduction {
-        max-width: 80%;
-    }
-}
 .introduction h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
@@ -461,6 +462,21 @@ body {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
 }
+@media only screen and (max-width:700px) {
+    .introduction {
+        max-width: 80%;
+    }
+    .introduction h1 {
+        font-size: 30px;
+    }
+    .introduction h2 {
+        font-size: 18px;
+    }
+    .introduction .my-picture img{
+        width: 175px;
+        height: 175px;
+    }
+}
 
 /* About */
 .about {
@@ -476,11 +492,7 @@ body {
     width: 100%;
     margin-bottom: -15px;
 }
-@media only screen and (max-width:700px) {
-    .about img{
-        margin-bottom: -10px;
-    }
-}
+
 .about .background {
     width: 100%;
     height: 620px;
@@ -514,6 +526,18 @@ body {
     font-size: 20px;
     line-height: 1.5;
     margin: auto;
+}
+@media only screen and (max-width:700px) {
+    .about .info {
+        margin-top: 100px;
+    }
+    .about img{
+        margin-bottom: -8px;
+    }
+    .about .info p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
 }
 .skills-container {
     display: flex;
