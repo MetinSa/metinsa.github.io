@@ -93,10 +93,12 @@ body {
     color: inherit;
 }
 .contact-img {
+    position: relative;
     width: 70px;
     margin: auto;
     margin-top: -40px;
     background: white;
+    z-index: 5;
 }
 .menu {
     display: none;
@@ -440,7 +442,6 @@ body {
     color: rgb(42, 42, 53);
     padding-bottom: 30px;
     font-size: 40px;
-    min-width: 500px;
     text-align: center;
 }
 .introduction h2 {
@@ -450,7 +451,6 @@ body {
     font-weight: 300;
     font-size: 22px;
     margin-bottom: 50px;
-    min-width: 500px;
 
 }
 .introduction .my-picture img{
@@ -619,7 +619,6 @@ body {
     margin: auto;
     width: 80%;
     max-width: 1000px;
-    min-width:750px;
     height: 1100px;
     padding-top: 100px;
 }
@@ -728,7 +727,6 @@ body {
         margin: auto;
         height: 1660px;
         margin-bottom: 100px;
-        min-width: 450px;
 
     }
     .education {

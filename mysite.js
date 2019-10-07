@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
       var target = document.querySelector(target);
       var target_position = target.getBoundingClientRect().top - 89;
       var start_position = window.pageYOffset;
-      var distance = target_position - start_position;
       var start_time = null;
 
       function animation(current_time) {
@@ -70,6 +69,9 @@ document.addEventListener('DOMContentLoaded', function () {
    var about_sec = document.querySelector(".abt");
    var background_sec = document.querySelector(".bkg");
    var work_sec = document.querySelector(".wrk");
+   var about_sec1 = document.querySelector(".abt1");
+   var background_sec1 = document.querySelector(".bkg1");
+   var work_sec1 = document.querySelector(".wrk1");
 
    home_sec.addEventListener('click', function () {
       smooth_scroll('.about', 800);
@@ -81,6 +83,15 @@ document.addEventListener('DOMContentLoaded', function () {
       smooth_scroll('.backg', 800);
    })
    work_sec.addEventListener('click', function(){
+      smooth_scroll('.work', 800);
+   })
+   about_sec1.addEventListener('click', function(){
+      smooth_scroll('.background', 800);
+   })
+   background_sec1.addEventListener('click', function(){
+      smooth_scroll('.backg', 800);
+   })
+   work_sec1.addEventListener('click', function(){
       smooth_scroll('.work', 800);
    })
 });
