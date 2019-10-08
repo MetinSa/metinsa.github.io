@@ -555,25 +555,7 @@ body {
     background: white;
     box-shadow: 0px 8px 6px -8px rgba(29, 29, 29, 0.178);
 }
-@media only screen and (max-width:800px) {
-    .skills-container {
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        margin: auto;
-        margin-top: -100px;
-        justify-content: center;
-        height: 2000px;
-        width: 85%;
-        max-width: 450px;
-    }
-    .skills-container .box-1 {
-        border-bottom: 1px solid rgba(216, 216, 216, 0.712);
-    }
-    .skills-container .box-2 {
-        border-bottom: 1px solid rgba(216, 216, 216, 0.712);
-    }
-}
+
 @media only screen and (min-width:800px) {
     .skills-container .box-1 {
         border-right: 1px solid rgba(216, 216, 216, 0.712);
@@ -587,7 +569,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    justify-content: flex-start;
+    justify-content: center;
     text-align: center;
 }
 .skills-container .box-2{
@@ -635,6 +617,36 @@ body {
     margin-bottom: 30px;
     height: 60px;
     color: white;
+}
+@media only screen and (max-width:800px) {
+    .skills-container {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        margin: auto;
+        margin-top: -100px;
+        justify-content: center;
+        height: auto;
+        width: 85%;
+        max-width: 450px;
+    }
+    .skills-container .box-1 {
+        border-bottom: 1px solid rgba(216, 216, 216, 0.712);
+        padding-bottom: 40px;
+    }
+    .skills-container .box-2 {
+        border-bottom: 1px solid rgba(216, 216, 216, 0.712);
+        padding-bottom: 40px;
+    }
+    .skills-container .box-3 {
+        padding-bottom: 70px;
+    }
+    .skills-container .box-icon{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        height: 60px;
+        color: white;
+    }
 }
 
 /* Background */
