@@ -564,7 +564,7 @@ body {
         margin-top: -100px;
         justify-content: center;
         height: 2000px;
-        width: 80%;
+        width: 85%;
         max-width: 450px;
     }
     .skills-container .box-1 {
@@ -643,7 +643,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     margin: auto;
-    width: 80%;
+    width: 100%;
     max-width: 1000px;
     height: 1100px;
     padding-top: 100px;
@@ -655,6 +655,8 @@ body {
     margin-bottom: 40px;
     font-size: 40px;
     text-align: center;
+    width: 90%;
+
 }
 .backg .title h2 {
     font-family: 'Roboto', sans-serif;
@@ -663,13 +665,14 @@ body {
     font-weight: 300;
     margin-bottom: 100px;
     font-size: 20px;
-    width: 100%;
+    width: 90%;
 }
 .education{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+
 }
 
 .education .master {
@@ -749,18 +752,26 @@ body {
     .backg{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         margin: auto;
-        height: 1660px;
+        height: 2200px;
         margin-bottom: 100px;
+    }
 
+    .backg .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .education {
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-content: center;
+        align-items: center;
         margin: auto;
         flex: 1;
+
     }
     .backg .title h2 {
         margin-bottom: 50px;
@@ -769,7 +780,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 80%;
+        width: 100%;
         margin: auto;
     }
     .education .img {
@@ -786,8 +797,16 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 80%;
+        width: 100%;
         margin: auto;
+    }
+    .master .info {
+        margin: auto;
+        width: 90%;
+    }
+    .bachelor .info {
+        margin: auto;
+        width: 90%;
     }
 }
 .work{
@@ -978,4 +997,9 @@ body {
 
 .work-more a{
     color: inherit;
+}
+@media only screen and (max-width:800px) {
+    .work-more {
+        height: 700px;
+    }
 }
