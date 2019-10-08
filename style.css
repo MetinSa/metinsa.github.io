@@ -754,8 +754,9 @@ body {
         flex-direction: column;
         justify-content: center;
         margin: auto;
-        height: 2200px;
+        height: 1900px;
         margin-bottom: 100px;
+        text-align: center;
     }
 
     .backg .title {
@@ -940,10 +941,10 @@ body {
         margin-top: -150px;
     }
     .work-container .project-1 {
-        width: 400px;
+        width: 95%;
     }
     .work-container .project-2 {
-        width: 400px;
+        width: 95%;
     }
 }
 .work-more {
@@ -1000,6 +1001,6 @@ body {
 }
 @media only screen and (max-width:800px) {
     .work-more {
-        height: 700px;
+        height: 600px;
     }
 }
