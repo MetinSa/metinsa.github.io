@@ -465,6 +465,8 @@ body {
 @media only screen and (max-width:700px) {
     .introduction {
         max-width: 80%;
+        margin-top: 50px;
+
     }
     .introduction h1 {
         font-size: 30px;
@@ -473,8 +475,8 @@ body {
         font-size: 18px;
     }
     .introduction .my-picture img{
-        width: 175px;
-        height: 175px;
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -529,10 +531,10 @@ body {
 }
 @media only screen and (max-width:700px) {
     .about .info {
-        margin-top: 100px;
+        margin-top: 50px;
     }
     .about img{
-        margin-bottom: -8px;
+        margin-bottom: -7px;
     }
     .about .info p {
         font-size: 16px;
