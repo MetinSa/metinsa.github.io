@@ -647,6 +647,18 @@ body {
         height: 60px;
         color: white;
     }
+    .skills-container h1 {
+        width: 75%;
+        font-size: 20px;
+    }
+    .skills-container h2 {
+        width: 75%;
+        font-size: 16px;
+    }
+    .skills-container li, .skills-container p {
+        width: 75%;
+        font-size: 16px;
+    }
 }
 
 /* Background */
@@ -766,7 +778,7 @@ body {
         flex-direction: column;
         justify-content: center;
         margin: auto;
-        height: 1900px;
+        height: auto;
         margin-bottom: 100px;
         text-align: center;
     }
@@ -795,6 +807,7 @@ body {
         justify-content: center;
         width: 100%;
         margin: auto;
+        margin-bottom: 50px;
     }
     .education .img {
         display: flex;
@@ -941,7 +954,8 @@ body {
 }
 @media only screen and (max-width:800px) {
     .work {
-        height: 1200px;
+        height: auto;
+        margin-bottom: 100px;
     }
     .work-container {
         display: flex;
@@ -957,6 +971,34 @@ body {
     }
     .work-container .project-2 {
         width: 95%;
+    }
+    .project-1 .title{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .project-2 .title{
+        display: flex;
+        flex-direction: row;
+    }
+    .work-container h1 {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    
+    .work-container p {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6;
+        color: rgb(85, 84, 92);
+        font-weight: 300;
+        font-size: 16px;
+        width: 300;
+        margin: auto;
+    }
+    .work-container a {
+        font-size: 16px;
     }
 }
 .work-more {
@@ -1013,6 +1055,7 @@ body {
 }
 @media only screen and (max-width:800px) {
     .work-more {
-        height: 600px;
+        height: auto;
+        margin-bottom: 100px;
     }
 }
