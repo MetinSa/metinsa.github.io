@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
    var work_sec1 = document.querySelector(".wrk1");
 
    home_sec.addEventListener('click', function () {
-      smooth_scroll('.about', 800);
+      smooth_scroll('.introduction', 800);
    })
    about_sec.addEventListener('click', function(){
       smooth_scroll('.background', 800);
