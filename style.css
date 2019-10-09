@@ -326,7 +326,7 @@ body {
     flex-direction: column;
     width: 90%;
     max-width: 600px;
-    height: 600px; 
+    height: 600px;
     margin: auto;
 }
 .form-container .label-item {
@@ -375,7 +375,7 @@ body {
         justify-content: flex-start;
         flex-direction: column;
         width: 100%;
-        height: 600px; 
+        height: 600px;
     }
     .form-container .row-1 {
         flex-wrap: wrap;
@@ -569,7 +569,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
 }
 .skills-container .box-2{
@@ -978,7 +978,7 @@ body {
     .project-1 .title{
         display: flex;
         flex-direction: row;
-        
+
     }
     .project-2 .title{
         display: flex;
@@ -989,7 +989,7 @@ body {
         margin-left: 10px;
         margin-top: 10px;
     }
-    
+
     .work-container p {
         text-align: center;
         font-family: 'Roboto', sans-serif;
