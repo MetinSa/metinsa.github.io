@@ -95,7 +95,7 @@ body {
 .contact-img {
     position: relative;
     width: 70px;
-    margin: auto;
+    margin: auto; 
     margin-top: -40px;
     background: white;
     z-index: 5;
@@ -370,6 +370,13 @@ body {
     color: rgb(34, 34, 36);
 }
 @media only screen and (max-width:700px) {
+    .contact-title {
+        width: 90%;
+    }
+
+    .contact-title h1 {
+        font-size: 30px;
+    }
     .form-container {
         display: flex;
         justify-content: flex-start;
@@ -547,7 +554,8 @@ body {
     justify-content: center;
     flex-direction: row;
     margin-top: -150px;
-    height: 850px ;
+
+    height: auto;
     width: 90%;
     max-width: 1200px;
     border: 1px solid rgba(216, 216, 216, 0.712);
@@ -571,6 +579,7 @@ body {
     flex: 1;
     justify-content: flex-start;
     text-align: center;
+    padding-bottom: 60px;
 }
 .skills-container .box-2{
     display: flex;
@@ -578,6 +587,8 @@ body {
     flex: 1;
     justify-content: flex-start;
     text-align: center;
+    padding-bottom: 60px;
+
 }
 .skills-container .box-3{
     display: flex;
@@ -585,6 +596,8 @@ body {
     flex: 1;
     justify-content: flex-start;
     text-align: center;
+    padding-bottom: 60px;
+
 }
 .skills-container h1 {
     width: 80%;
@@ -672,6 +685,13 @@ body {
     height: 1100px;
     padding-top: 100px;
 }
+.backg .title{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    align-items: center;
+}
 .backg .title h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -679,8 +699,6 @@ body {
     margin-bottom: 40px;
     font-size: 40px;
     text-align: center;
-    width: 90%;
-
 }
 .backg .title h2 {
     font-family: 'Roboto', sans-serif;
@@ -805,7 +823,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
+        width: 90%;
         margin: auto;
         margin-bottom: 50px;
     }
@@ -823,7 +841,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
+        width: 90%;
         margin: auto;
     }
     .master .info {
