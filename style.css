@@ -373,7 +373,6 @@ body {
     .contact-title {
         width: 90%;
     }
-
     .contact-title h1 {
         font-size: 30px;
     }
@@ -779,13 +778,13 @@ body {
 .education .img {
     display: flex;
     justify-content: center;
-    width: 300px;
+    max-width: 300px;
     height: 250px;
     border-radius: 40px;
     background: rgba(136, 136, 136, 0.178);
 }
 .education .img img{
-    width: 300px;
+    max-width: 300px;
     height: 250px;
     border-radius: 40px;
 }
@@ -831,7 +830,7 @@ body {
         display: flex;
         justify-content: center;
         margin: auto;
-        width: 300px;
+        max-width: 300px;
         height: 250px;
         border-radius: 40px;
         background: rgba(136, 136, 136, 0.178);
@@ -950,7 +949,7 @@ body {
     color: rgb(85, 84, 92);
     font-weight: 300;
     font-size: 18px;
-    width: 300;
+    max-width: 300;
     margin: auto;
 }
 
@@ -1015,7 +1014,7 @@ body {
         color: rgb(85, 84, 92);
         font-weight: 300;
         font-size: 16px;
-        width: 300;
+        max-width: 300px;
         margin: auto;
     }
     .work-container a {
